@@ -240,7 +240,9 @@ form {
 .navButton:hover {
   background: rgb(230, 230, 230);
 }
-
+#content {
+  overflow-x: hidden;
+}
 /* card styles------------------------------------------------------------------------ */
 #cards {
   margin-top: 45px;
@@ -440,4 +442,29 @@ form {
   width: fit-content;
   height: fit-content;
   padding: 4px 14px;
+}
+
+/* advert=========== */
+#advert {
+  position: fixed;
+  bottom: 20%;
+  right: -100%;
+  padding: 17px;
+  max-width: 320px;
+  z-index: 2;
+  background: #cecece;
+  border-radius: 20px 0 0 20px;
+  transition: 1.5s ease-in;
+}
+#advert h1 {
+  margin-bottom: 7px;
+}
+#advert button {
+  font-size: larger;
+  padding: 6px;
+  margin-top: 7px;
+  background: #f1ba22;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
 }

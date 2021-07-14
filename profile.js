@@ -204,3 +204,16 @@ addCardButton.addEventListener("click", () => {
 
   AddCard(cardType.value, cardNum.value, cvv.value, cardHolder.value, expDate);
 });
+
+//advert=======================================================
+let advert = document.getElementById("advert");
+let advertButton = document.querySelector("#advert button");
+function showAdvert() {
+  advert.style.right = "0";
+}
+setTimeout(showAdvert, 3000);
+
+advertButton.addEventListener("click", () => {
+  alert(document.cookie);
+  advert.style.right = "-100%";
+});
