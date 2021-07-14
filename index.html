@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cards</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="flex-container">
+        <div class="login">
+          <div class="loginAlert alert">
+            Incorrect Username or Password
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+            >
+              &times;
+            </span>
+          </div>
+
+          <h1 id="loginHeading">Login</h1>
+          <p id="error-text"></p>
+          <form method="POST" id="login-form">
+            <label for="username" id="userlabel" class="label">Username</label>
+            <br />
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+              class="input"
+            />
+            <br />
+            <label for="password" id="passlabel" class="label">Password</label>
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="user_pass"
+              placeholder="Password"
+              required
+              class="input"
+            />
+            <br />
+
+            <br />
+            <button type="submit" class="button logInButton">Login</button>
+          </form>
+
+          <div id="newUser">
+            <p id="createAccLabel">Don't have an account yet ?</p>
+            <a id="createAccLink" href="#">Create an account</a>
+          </div>
+        </div>
+
+        <div class="signup">
+          <h1 id="signupHeading">Sign Up</h1>
+          <div class="signupAlert alert">
+            <p></p>
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+            >
+              &times;
+            </span>
+          </div>
+          <div class="signupPrompt prompt">
+            You Are Ready to Go!
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none';"
+            >
+              &times;
+            </span>
+          </div>
+          <p id="error-text"></p>
+          <form method="POST" id="signup-form">
+            <label for="userhandle" id="handlelabel" class="label"
+              >Username</label
+            >
+            <br />
+            <input
+              type="text"
+              name="username"
+              id="userhandle"
+              placeholder="Useraname"
+              required
+              class="input"
+            />
+            <br />
+
+            <label for="password" id="passlabelSignup" class="label"
+              >Password</label
+            >
+            <br />
+            <input
+              type="password"
+              name="password"
+              id="user_passSignup"
+              placeholder="Password"
+              required
+              class="input"
+            />
+            <br /><br />
+
+            <button class="button SignUpButton">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

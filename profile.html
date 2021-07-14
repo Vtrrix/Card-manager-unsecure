@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cards</title>
+  </head>
+  <body>
+    <div id="nav">
+      <h2>Welcome, Vtrix</h2>
+      <div id="actions">
+        <button id="showAddCard" class="button navButton">Add Card</button>
+
+        <button id="logout" class="button navButton">Logout</button>
+      </div>
+    </div>
+    <div id="content">
+      <div id="addCard">
+        <div class="AddCardAlert alert">
+          Invalid Data
+          <span
+            class="closebtn"
+            onclick="this.parentElement.style.display='none';"
+          >
+            &times;
+          </span>
+        </div>
+        <button id="closeForm" class="button">Close</button>
+        <form id="addCardForm">
+          <input
+            type="text"
+            id="cardHolder"
+            class="input"
+            name="cardholder"
+            required
+            placeholder="Card Holder Name"
+          />
+          <input
+            type="text"
+            id="cardNum"
+            class="input"
+            required
+            name="cardnumber"
+            placeholder="Card Number"
+          />
+          <input
+            type="text"
+            id="phoneNum"
+            class="input"
+            required
+            name="phonenumber"
+            placeholder="Contact Number"
+          />
+
+          <select class="selector input" id="cardType" name="cardtype">
+            <option value="credit">Credit</option>
+            <option value="debit">Debit</option>
+          </select>
+          <input
+            type="password"
+            class="input"
+            required
+            id="cvv"
+            name="cvv"
+            placeholder="CVV"
+          />
+
+          <button class="button" id="addCardButton">Add</button>
+        </form>
+      </div>
+      <div id="cards"></div>
+    </div>
+
+    <script src="./profile.js"></script>
+  </body>
+</html>
